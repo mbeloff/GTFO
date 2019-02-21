@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  background: white; }
+
+.header {
+  background-image: url(../img/temp/4.jpg);
+  background-position: 0 -1630px;
+  background-size: cover; }
+
+.header-container {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-container .header-right {
+    text-align: right; }
+  .header-container h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fac61d;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  .header-container h3 {
+    color: white;
+    padding-left: 1em;
+    padding-top: .5em; }
+
+.header-right {
+  height: 100%;
+  padding-top: 20px; }
+  .header-right p {
+    color: #fac61d;
+    text-shadow: 1px 1px black;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 800; }
+
+.header-contact {
+  background: rgba(0, 0, 0, 0.719);
+  padding: 0 20px;
+  border: 1px #fac61d solid;
+  border-radius: 5px; }
+
+.underbar {
+  background: #4b535a;
+  margin-bottom: 10px; }
+
+.underbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #fac61d; }
+
+.navbar-nav {
+  margin-left: auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+  .navbar-nav .nav-item {
+    padding: 5px; }
+  .navbar-nav .dropdown-menu {
+    background: var(--gray-dark);
+    border-radius: 0;
+    border: none; }
+  .navbar-nav .dropdown-item:hover {
+    background: var(--gray-light);
+    color: var(--yellow); }
+  .navbar-nav .dropdown-item {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+
+.carousel-slide {
+  height: 350px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative; }
+
+.carousel-img {
+  height: 350px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.carousel-item-1 {
+  background-image: url(../img/temp/1.jpg); }
+
+.carousel-item-2 {
+  background-image: url(../img/temp/2.jpg); }
+
+.carousel-item-3 {
+  background-image: url(../img/temp/3.jpg); }
+
+.carousel-text {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: .1em;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  text-align: right; }
+
+.carousel-heading {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #fac61d;
+  text-shadow: black 1px 1px; }
+
+.carousel-p {
+  font-size: 1.1em;
+  width: 75%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-left: auto; }
+
+.main-content hr {
+  display: block;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(#f1a839), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #f1a839, rgba(0, 0, 0, 0)); }
+
+.main-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 400px;
+      grid-template-columns: 1fr 400px; }
+  @media only screen and (max-width: 768px) {
+    .main-content-container {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr; } }
+
+.welcome .welcome-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 20px; }
+
+.welcome .welcome-p {
+  padding: 5px;
+  text-align: justify;
+  margin: 20px;
+  padding-top: 50px; }
+  @media only screen and (max-width: 1200px) {
+    .welcome .welcome-p {
+      margin: 10px;
+      line-height: initial;
+      padding-top: 0; } }
+
+.booking {
+  height: 400px;
+  background: #fac61d;
+  padding: 20px; }
+  @media only screen and (max-width: 768px) {
+    .booking {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1/2; } }
+  .booking h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 40px 0; }
+/*# sourceMappingURL=styles.css.map */

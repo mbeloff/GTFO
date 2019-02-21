@@ -1,0 +1,37 @@
+$shadow: 0px 10px 20px 2px #00000014,
+0px 10px 5px -8px #00000005;
+$break-med: 768px;
+$break-small: 500px;
+$font-1: 'Open Sans', sans-serif;
+$font-2: 'Lato', sans-serif;
+
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 60px;
+$primary: #f14d4d;
+$primary-alt: #db3333;
+$secondary: #fac61d;
+$secondary-alt: #e0b012;
+$nav-font-color: #ffffff;
+$link-hover-color: #fa801d;
+$a-hover-color: white;
+$medium: #4b535a;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: $font-1;
+  background: white;
+}

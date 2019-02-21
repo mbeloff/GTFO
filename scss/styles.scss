@@ -1,0 +1,123 @@
+@import '_base.scss';
+@import '_header.scss';
+
+
+
+.carousel-slide {
+  height: 350px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.carousel-img {
+  height: 350px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.carousel-item-1 {
+  background-image: url(../img/temp/1.jpg);
+}
+
+.carousel-item-2 {
+  background-image: url(../img/temp/2.jpg);
+}
+
+.carousel-item-3 {
+  background-image: url(../img/temp/3.jpg);
+}
+
+.carousel-text {
+  position: absolute;
+  font-family: $font-2;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: .1em;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  // z-index: 1000;
+  padding: 10px;
+  color: white;
+  text-align: right;
+}
+
+.carousel-heading {
+  font-size: 2em;
+  margin: 0;
+  font-family: $font-1;
+  font-weight: 800;
+  color: $secondary;
+  text-shadow: black 1px 1px
+}
+
+.carousel-p {
+  font-size: 1.1em;
+  width: 75%;
+  font-family: $font-2;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.main-content {
+  & hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(241, 168, 57), rgba(0, 0, 0, 0));
+  }
+}
+
+
+.main-content-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+
+  @media only screen and (max-width: $break-med) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.welcome {
+  & .welcome-heading {
+    font-family: $font-1;
+    font-weight: 800;
+    margin: 20px;
+  }
+
+  & .welcome-p {
+    padding: 5px;
+    text-align: justify;
+    margin: 20px;
+    padding-top: 50px;
+
+    @media only screen and (max-width: 1200px) {
+      margin: 10px;
+      line-height: initial;
+      padding-top: 0;
+    }
+  }
+
+}
+
+.booking {
+  height: 400px;
+  background: $secondary;
+  padding: 20px;
+
+  @media only screen and (max-width: $break-med) {
+    grid-row: 1/2;
+  }
+  & h2 {
+    font-family: $font-1;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 40px 0;
+  }
+}
