@@ -67,6 +67,7 @@
 
 .main-content {
   & hr {
+    margin: 70px 0;
     display: block;
     border: 0;
     height: 1px;
@@ -120,4 +121,32 @@
     text-align: center;
     margin: 20px 0 40px 0;
   }
+}
+
+.card-group {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  max-height: 6em;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-text::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4.5em;
+  width: 25%;
+  text-align: center;
+}
+
+.btn-warning {
+  font-family: $font-1;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--dark)
 }
