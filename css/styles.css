@@ -49,14 +49,14 @@ body {
             transform: skewX(-30deg); }
   .header-container h2 {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
     margin-top: -20px;
     font-size: 1.5em;
     color: #fac61d; }
   .header-container h3 {
     font-size: 2em;
-    font-weight: 600;
-    color: #2b2a2a;
-    padding-left: 1em; }
+    font-weight: 400;
+    color: #2b2a2a; }
   @media only screen and (max-width: 500px) {
     .header-container {
       font-size: .8em; } }
