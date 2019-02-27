@@ -1,40 +1,55 @@
 .header {
-  background-image: url(../img/temp/4.jpg);
-  background-position: 0 -1630px;
+  background-position: 50%;
   background-size: cover;
+  position: relative;
 }
 
 .header-container {
+  font-size: 1em;
+  padding: 0 5%;
+  font-family: $font-2;
   height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   & .header-right {
     text-align: right;
   }
   & h1 {
     font-family: $font-1;
+    width: 80%;
+    font-size: 6em;
     font-weight: 700;
     color: $secondary;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: -15px;
     // transform: rotate(-15deg);
-    transform: skewX(-30deg)
+    transform: skewX(-30deg);
   }
   & h2 {
-    font-size: 1em;
-    color: #ffab66;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+    margin-top: -20px;
+    font-size: 1.5em;
+    color: $secondary;
   }
   & h3 {
-    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(43, 42, 42);
     padding-left: 1em;
-    // padding-top: .5em;
+  }
+  @media only screen and (max-width: $break-small){
+    font-size: .8em;
+  }
+}
+
+.header-left {
+  @media only screen and (max-width: $break-med){
+    width: 100%;
   }
 }
 
 .header-right {  
-  height: 100%;
-  padding-top: 20px;
   & p {
     color: $secondary;
     text-shadow: 1px 1px black;
@@ -42,12 +57,16 @@
     font-family: $font-2;
     font-weight: 800;
   }
+  @media only screen and (max-width:$break-med){
+   display: none;
+  }
 }
 
 .header-contact {
   background: rgba(0, 0, 0, 0.719);
+  font-size: 2em;
   padding: 0 20px;
-  border: 1px $secondary solid;
+  // border: 1px $secondary solid;
   border-radius: 5px;
 }
 

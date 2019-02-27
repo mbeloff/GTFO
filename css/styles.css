@@ -15,18 +15,20 @@ body {
   background: white; }
 
 .header {
-  background-image: url(../img/temp/4.jpg);
-  background-position: 0 -1630px;
-  background-size: cover; }
+  background-position: 50%;
+  background-size: cover;
+  position: relative; }
 
 .header-container {
+  font-size: 1em;
+  padding: 0 5%;
+  font-family: "Lato", sans-serif;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -34,33 +36,47 @@ body {
     text-align: right; }
   .header-container h1 {
     font-family: "Open Sans", sans-serif;
+    width: 80%;
+    font-size: 6em;
     font-weight: 700;
     color: #fac61d;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: -15px;
     -webkit-transform: skewX(-30deg);
             transform: skewX(-30deg); }
   .header-container h2 {
-    font-size: 1em;
-    color: #ffab66; }
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+    margin-top: -20px;
+    font-size: 1.5em;
+    color: #fac61d; }
   .header-container h3 {
-    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    color: #2b2a2a;
     padding-left: 1em; }
+  @media only screen and (max-width: 500px) {
+    .header-container {
+      font-size: .8em; } }
 
-.header-right {
-  height: 100%;
-  padding-top: 20px; }
-  .header-right p {
-    color: #fac61d;
-    text-shadow: 1px 1px black;
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    font-weight: 800; }
+@media only screen and (max-width: 768px) {
+  .header-left {
+    width: 100%; } }
+
+.header-right p {
+  color: #fac61d;
+  text-shadow: 1px 1px black;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 800; }
+
+@media only screen and (max-width: 768px) {
+  .header-right {
+    display: none; } }
 
 .header-contact {
   background: rgba(0, 0, 0, 0.719);
+  font-size: 2em;
   padding: 0 20px;
-  border: 1px #fac61d solid;
   border-radius: 5px; }
 
 .underbar {
@@ -136,6 +152,9 @@ body {
   padding: 10px;
   color: white;
   text-align: right; }
+  @media only screen and (max-width: 500px) {
+    .carousel-text {
+      font-size: .7em; } }
 
 .carousel-heading {
   font-size: 2em;
