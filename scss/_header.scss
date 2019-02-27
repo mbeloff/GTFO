@@ -6,12 +6,14 @@
 
 .header-container {
   font-size: 1em;
-  padding: 0 5%;
+  padding: 0 16px;
   font-family: $font-2;
+  max-width: 1200px;
   height: 200px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  align-items: start;
   & .header-right {
     text-align: right;
   }
@@ -50,6 +52,7 @@
 }
 
 .header-right {  
+  margin-top: 25px;
   & p {
     color: $secondary;
     text-shadow: 1px 1px black;
@@ -70,6 +73,14 @@
   border-radius: 5px;
 }
 
+.header-phone {
+
+}
+
+.header-email {
+  font-size: .7em;
+}
+
 .underbar {
   background: $medium;
   margin-bottom: 30px;
@@ -84,6 +95,11 @@
   font-weight: 700;
   font-style: italic;
   color: $secondary;
+}
+
+.navbar-collapse {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .navbar-nav {

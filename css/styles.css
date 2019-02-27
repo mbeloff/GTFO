@@ -21,17 +21,20 @@ body {
 
 .header-container {
   font-size: 1em;
-  padding: 0 5%;
+  padding: 0 16px;
   font-family: "Lato", sans-serif;
+  max-width: 1200px;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
   .header-container .header-right {
     text-align: right; }
   .header-container h1 {
@@ -62,22 +65,26 @@ body {
   .header-left {
     width: 100%; } }
 
-.header-right p {
-  color: #fac61d;
-  text-shadow: 1px 1px black;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 800; }
-
-@media only screen and (max-width: 768px) {
-  .header-right {
-    display: none; } }
+.header-right {
+  margin-top: 25px; }
+  .header-right p {
+    color: #fac61d;
+    text-shadow: 1px 1px black;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 800; }
+  @media only screen and (max-width: 768px) {
+    .header-right {
+      display: none; } }
 
 .header-contact {
   background: rgba(0, 0, 0, 0.719);
   font-size: 2em;
   padding: 0 20px;
   border-radius: 5px; }
+
+.header-email {
+  font-size: .7em; }
 
 .underbar {
   background: #4b535a;
@@ -96,6 +103,10 @@ body {
   font-style: italic;
   color: #fac61d; }
 
+.navbar-collapse {
+  max-width: 1200px;
+  margin: auto; }
+
 .navbar-nav {
   margin-left: auto;
   font-family: "Open Sans", sans-serif;
@@ -113,6 +124,9 @@ body {
     color: white;
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
+
+.footer {
+  color: rgba(255, 255, 255, 0.589); }
 
 .carousel-slide {
   height: 350px;
@@ -219,6 +233,10 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 20px 0 40px 0; }
+
+.articles {
+  max-width: 1200px;
+  margin: auto; }
 
 .card-group {
   margin-bottom: 20px; }
